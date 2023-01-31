@@ -73,6 +73,10 @@ h6 {
   border-radius: 0.6rem 0rem 0rem 0.6rem;
 }
 
+.hidden-desktop {
+  display: none;
+}
+
 .product-card {
   background-color: hsl(0, 0%, 100%);
   display: flex;
@@ -121,6 +125,10 @@ h6 {
 }
 
 .btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.8rem;
   color: hsl(0, 0%, 100%);
   border: none;
   padding: 1rem;
@@ -128,6 +136,12 @@ h6 {
   background-color: hsl(158, 36%, 37%);
   width: 100%;
   margin-top: auto;
+  transition: all 0.3s;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: hsl(158, 36%, 21%);
 }
 
 .attribution {

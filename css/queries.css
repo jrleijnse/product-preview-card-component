@@ -1,0 +1,51 @@
+@media (max-width: 375px) {
+  html {
+    font-size: 9px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 340px;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .hidden-desktop {
+    display: block;
+  }
+
+  .product-img {
+    border-radius: 0.6rem 0.6rem 0rem 0rem;
+  }
+
+  .product-card {
+    padding: 2.2rem;
+    border-radius: 1rem;
+  }
+
+  .product-type {
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+  .product-title {
+    width: 100%;
+    font-size: 3.6rem;
+  }
+
+  .price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .price-discount {
+    font-size: 3.6rem;
+  }
+
+  .price-regular {
+    padding-left: 2rem;
+  }
+}

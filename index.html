@@ -17,14 +17,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
     <main>
       <div class="grid-container">
         <img
-          class="product-img"
+          class="product-img hidden-mobile"
           src="./images/image-product-desktop.jpg"
+          alt="Image of a Chanel perfume bottle"
+        />
+        <img
+          class="product-img hidden-desktop"
+          src="./images/image-product-mobile.jpg"
           alt="Image of a Chanel perfume bottle"
         />
         <div class="product-card">
@@ -38,7 +44,9 @@
             <span class="price-discount">$149.99</span>
             <span class="price-regular"> $169.99</span>
           </div>
-          <button class="btn-add"><img /><span>Add to Cart</span></button>
+          <button class="btn-add">
+            <img src="./images/icon-cart.svg" /><span>Add to Cart</span>
+          </button>
         </div>
       </div>
     </main>
