@@ -1,0 +1,140 @@
+/*////////////////////// CSS RESET //////////////////////// */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/*/ ///////////////////// CSS RESET //////////////////////// */
+
+/* ### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 600px;
+}
+
+.product-img {
+  border-radius: 0.6rem 0rem 0rem 0.6rem;
+}
+
+.product-card {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0rem 0.6rem 0.6rem 0rem;
+}
+
+.product-type {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3.5px;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+.product-title {
+  color: hsl(212, 21%, 14%);
+  line-height: 1.02;
+  width: 85%;
+  font-size: 2.3rem;
+  font-family: "Fraunces", serif;
+  margin-bottom: 1.6rem;
+}
+
+.product-description {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+.price-discount {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2.4rem;
+}
+
+.price-regular {
+  color: hsl(228, 12%, 48%);
+  padding-left: 1.2rem;
+  text-decoration: line-through;
+}
+
+.btn-add {
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  margin-top: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
